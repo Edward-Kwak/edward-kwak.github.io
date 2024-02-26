@@ -27,7 +27,7 @@
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png">
 
-  <title>속기 연습 사이트</title>
+  <title>속기 연습 페이지</title>
   <link rel="manifest" href="manifest.json">
 
   <script>
@@ -126,6 +126,7 @@
       _flutter.loader.loadEntrypoint({
         serviceWorker: {
           serviceWorkerVersion: serviceWorkerVersion,
+          serviceWorkerUrl: "/flutter_service_worker.js?v=",
         },
         onEntrypointLoaded: function(engineInitializer) {
           engineInitializer.initializeEngine().then(function(appRunner) {
